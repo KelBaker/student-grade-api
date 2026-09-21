@@ -1,16 +1,28 @@
 {
-  "name": "student_grade_manager",
+  "name": "student-grade-manager",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "description": "API REST para gerenciamento de notas de alunos",
+  "main": "src/server.js",
   "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "express",
+    "rest-api",
+    "sqlite",
+    "nodejs"
+  ],
+  "author": "Kelvin Henrique",
+  "license": "MIT",
   "dependencies": {
-    "uuid": "^11.0.2"
+    "better-sqlite3": "^11.5.0",
+    "express": "^4.21.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
   }
 }
